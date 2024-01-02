@@ -1,1 +1,32 @@
+//Templates is one of the most important concepts in C++. If you learn and apply it well it will give you the edge 
+ over other Competitive Programmers.
 
+###Why do we need templates?
+->as we know
+  Class is a template for object i.e we can create multiple objects giving multiple meanings 
+  and just like that 
+  Template is a template for class ,what does it mean ?
+-> It means that template gives the rights for creating a single Class which can give multiple meanings.
+
+ let's take an example :
+   class a{
+   int *arr;       //In class a if we have to input array with float/char/long datatype we have to make multiple classes
+   public:             which violates the DRY(Donot Repeat yourself)
+   }
+   So the main reason for using templates is:
+   --> DRY
+   -->For generic programming(not being specific)
+
+## Syntax for templates
+ --> template<class T>    //where T can be int/float/long/ or any datatype 
+    class vector{
+    T *arr;
+    public:
+    vector(T *r)
+     {
+       //code
+      }
+    };
+      int main(){
+     vector<int> obj1;
+      vector<float> obj2;
