@@ -30,3 +30,5 @@
       int main(){
      vector<int> obj1;
       vector<float> obj2;
+     //& many more codes
+    }
